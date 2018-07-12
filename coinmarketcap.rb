@@ -19,8 +19,8 @@ end
 def get_all_crypto_price(page)
 	crypto_price = []
 	idx = 0
-	page.xpath('//a[@class="price"]').each do |name|
-		crypto_price[idx] = name.content
+	page.xpath('//a[@class="price"]').each do |value|
+		crypto_price[idx] = name.value
 		idx += 1
 	end 
 	return crypto_price

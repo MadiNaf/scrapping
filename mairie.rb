@@ -43,7 +43,8 @@ def hashage(page)
 	city_links = get_all_the_urls_of_val_doise_townhalls(page)
 
 	city_links.each do |link|
-		values = get_the_email_of_a_townhal_from_its_webpage(link)
+		data = Nokogiri::HTML(open('link'))
+		values = get_the_email_of_a_townhal_from_its_webpage(data)
 	end 
 
     city_hash = key.zip(values)
