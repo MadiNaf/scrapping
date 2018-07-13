@@ -68,7 +68,7 @@ def global_method
     f = get_user_email(page6) + get_user_email(page7) + get_user_email(page8) + get_user_email(page9) + get_user_email(page10)
     g = get_user_email(page11) + get_user_email(page12)	
 
-    all_users_names =  = a + b + c
+    all_users_names = a + b + c
     all_users_mail = e + f + g
 
     hash_dep = hashage(all_users_names, all_users_mail)
@@ -77,7 +77,6 @@ def global_method
 end 
 
 #-----------------------------------------------------------------------------------
-
 
 #puts get_all_users_names(page1)
 #puts get_user_email(page1)

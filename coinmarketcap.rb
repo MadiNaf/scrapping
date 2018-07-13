@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'nokogiri'
-require 'open-uri'
+require 'open-uri' 
 require 'pry'
 require 'uri'
 #-----------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ def get_all_crypto_price(page)
 	crypto_price = []
 	idx = 0
 	page.xpath('//a[@class="price"]').each do |value|
-		crypto_price[idx] = name.value
+		crypto_price[idx] = value.content
 		idx += 1
 	end 
 	return crypto_price
